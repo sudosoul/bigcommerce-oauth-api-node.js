@@ -7,8 +7,8 @@ This file requires the following node modules to work properly: <br/>
   2. request <br/>
 
 You can install them as so: <br/>
-`$ sudo npm install promise` <br/>
-`$ sudo npm install request` 
+`$  npm install promise` <br/>
+`$  npm install request` 
 
 #Features
 1. Promise based. Every CRUD request returns a Promise for easy and organized Async control.
@@ -74,7 +74,7 @@ api.put('/products/1', {price: 29.99}).then(function(product) {
 
 //----------------------------------//
 
-//**************** Advanced Examples (Not for the faint of heart) ****************//
+//**************** Advanced Example ****************//
 
 /** 
  * Scenario: Business is having a store-wide clearance. Every single product is now %50 off, and 
@@ -87,7 +87,6 @@ api.put('/products/1', {price: 29.99}).then(function(product) {
  *  3. Get a collection of products, 250 at a time, and prepare its new price and category.
  *  4. Update the individual product. 
  *
- * The speed of this will be unmatched by any other language, due to the Async parallel nature of Node's HTTP requests. 
  * The speed for this will vary depending on the max number of connections you define. 
  */
 
